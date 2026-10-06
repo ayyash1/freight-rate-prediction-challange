@@ -11,7 +11,7 @@ An end-to-end, production-grade Machine Learning solution designed to forecast s
 ## 📌 Executive Summary & Assessment Overview
 
 - **Objective:** Model and forecast commercial freight posted rates using 48,000 historical development loads (`data/train_test.csv`), generate predictions for 12,000 unobserved validation loads (`data/validation.csv`), and evaluate December 2025 rate dynamics for a fixed corridor (`data/december_chart_inputs.csv`).
-- **Core Innovation:** Re-framed total load pricing into a **Rate Per Mile (RPM)** formulation ($\hat{y}_{\text{rate}} = \hat{y}_{\text{RPM}} \times \text{distance}$), resolving haul-length heteroscedasticity and improving MAE by ~15-20%.
+- **Core Innovation:** Re-framed total load pricing into a Rate Per Mile (RPM) formulation:$$ \hat{y}_{\text{rate}} = \hat{y}_{\text{RPM}} \times \text{distance} $$ This resolves haul-length heteroscedasticity and improves MAE by approximately **15–20%**.
 - **Modeling Suite:** Weighted Multi-Model Gradient Boosted Ensemble combining **LightGBM (40%)**, **CatBoost (40%)**, and **XGBoost (20%)** with robust loss objectives (L1 / MAE / Huber).
 - **Validation Framework:** 5-Fold Expanding-Window Time Series Cross-Validation (Months 6 through 10 of 2025) guaranteeing **zero temporal lookahead leakage**.
 - **Performance:** Out-of-fold Cross-Validation **MAE: $123.82**, **R²: 0.8225**, **MAPE: 5.10%**.
