@@ -191,6 +191,5 @@ Below is the certified December 2025 forecast produced by `score.py` for the fix
 - [x] **`scorer_results/candidate_december.png`**: Official December 2025 chart generated and verified by `score.py`.
 - [x] **`report/Freight_Rate_ML_Assessment_Report.docx`**: Full technical assessment report in Word DOCX format.
 - [x] **`report/Freight_Rate_ML_Assessment_Report.pdf`**: Full technical assessment report in PDF format.
-- [x] **`loom_presentation_script.md`**: Complete, timed 2-3 minute presentation script.
 - [x] **Source Code (`src/`, `train.py`, `predict.py`)**: Modular, clean, reproducible code.
 - [x] **`requirements.txt`**: Environment dependencies.
