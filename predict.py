@@ -34,17 +34,9 @@ def main():
 
     # 1. Load Data
     train_path = data_dir / "train_test.csv"
-    if not train_path.exists():
-        train_path = data_dir / "train-test.csv"
-        
     val_path = data_dir / "validation.csv"
     template_path = data_dir / "validation_predictions_template.csv"
-    if not template_path.exists():
-        template_path = data_dir / "validation-predictions-template.csv"
-        
     dec_path = data_dir / "december_chart_inputs.csv"
-    if not dec_path.exists():
-        dec_path = data_dir / "december-chart-inputs.csv"
 
     print(f"\n[1/4] Loading input datasets...")
     train_df = pd.read_csv(train_path)
@@ -80,7 +72,6 @@ def main():
     
     # Save completed December chart inputs
     dec_preds.to_csv(data_dir / "december_chart_inputs.csv", index=False)
-    dec_preds.to_csv(data_dir / "december-chart-inputs.csv", index=False)
     print(f"  Saved completed December predictions to: {data_dir / 'december_chart_inputs.csv'}")
     print(f"  Sample December predictions:\n{dec_preds.head(5).to_string(index=False)}")
 

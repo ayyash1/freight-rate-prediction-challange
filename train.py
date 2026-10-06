@@ -34,9 +34,6 @@ def main():
     # 1. Load Datasets
     train_path = data_dir / "train_test.csv"
     val_path = data_dir / "validation.csv"
-    
-    if not train_path.exists():
-        train_path = data_dir / "train-test.csv"
 
     print(f"\n[1/4] Loading development data from {train_path}...")
     train_df = pd.read_csv(train_path)
