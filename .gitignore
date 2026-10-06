@@ -1,0 +1,17 @@
+.venv/
+venv/
+.vscode/
+__pycache__/
+*.py[cod]
+
+catboost_info/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.env
+.env.*
+!.env.example
+
+scorer_results/*.tmp
