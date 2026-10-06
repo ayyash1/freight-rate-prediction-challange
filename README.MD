@@ -185,19 +185,6 @@ Below is the certified December 2025 forecast produced by `score.py` for the fix
 
 ---
 
-## 🎥 2-3 Minute Loom Presentation Script
-
-A complete, timed script is available in [`loom_presentation_script.md`](loom_presentation_script.md).
-
-**Summary of Loom Sections:**
-1. **[0:00 - 0:40]** Key findings from exploratory data analysis (distance economies of scale, equipment premiums, intra-week cycles).
-2. **[0:40 - 1:15]** Data-quality issues identified (inverted weights, missing weights, missing market indices) and how they were remediated.
-3. **[1:15 - 1:50]** Training and validation strategy (Expanding-Window Time Series CV to eliminate lookahead leakage).
-4. **[1:50 - 2:25]** Model architecture rationale (Rate Per Mile target formulation and Weighted Multi-Model Gradient Boosted Ensemble).
-5. **[2:25 - 2:55]** Code walkthrough and verification of `score.py` outputs.
-
----
-
 ## 📦 Deliverables Checklist
 
 - [x] **`validation_predictions.csv`**: Exactly 12,000 rows (`load_id,predicted_rate`), formatted and strictly positive.
